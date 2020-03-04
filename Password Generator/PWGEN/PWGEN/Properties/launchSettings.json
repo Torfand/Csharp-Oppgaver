@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PWGEN": {
+      "commandName": "Project",
+      "commandLineArgs": "20 llLLssdd"
+    }
+  }
+}
