@@ -20,7 +20,7 @@ namespace _3_4
             Console.WriteLine("Skriv Text Her (!-Store Bokstaver-!: ");
             string output = "";
             var letters = LettersAndCipher(out var ciphertext);
-
+           
 
             output = Encrypt(letters, output, ciphertext);
             Console.WriteLine("Kryptert Text : " + output);
@@ -72,7 +72,9 @@ namespace _3_4
 
         private static string Encrypt(string[] letters, string output, string[] ciphertext)
         {
-            var plaintext = "kake".ToUpper();
+            Random random = new Random();
+            int r = random.Next(0, 26);
+            var plaintext = Console.ReadLine()?.ToUpper();
 
             foreach (var letter in plaintext)
             {
@@ -81,7 +83,7 @@ namespace _3_4
                 {
                     if (check == letters[i])
                     {
-                        output += ciphertext[i];
+                        output += ciphertext[r];
                     }
                 }
             }
