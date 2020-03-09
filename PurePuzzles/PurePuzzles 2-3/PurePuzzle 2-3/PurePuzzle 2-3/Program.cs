@@ -12,12 +12,12 @@ namespace PurePuzzle_2_3
             for (int i = -5; i <= rows; i++)
             {
 
-                if(i == 0) continue;
+                if (i == 0) continue;
                 var hashtoright = (rows - Math.Abs(i)) * 2;
                 for (int j = -7; j <= collums; j++)
                 {
                     var hashwritten = collums - Math.Abs(j);
-                    if (rows - Math.Abs(i) > collums -  Math.Abs(j))
+                    if (rows - Math.Abs(i) > collums - Math.Abs(j))
                     {
 
                         WriteSpace();
@@ -35,23 +35,7 @@ namespace PurePuzzle_2_3
                 }
                 NewLine();
             }
-            //foreach (var tag in tagsperLine)
-            //{
-            //    for (int x = 0; x < tag; x++)
-            //    {
-            //        WriteSpace();
-            //    }
-            //    for (int j = -1; j < tag; j++)
-            //    {
 
-            //        WriteHashtag();
-            //    }
-
-            //    v
-                
-
-            //    NewLine();
-            //}
         }
 
 
