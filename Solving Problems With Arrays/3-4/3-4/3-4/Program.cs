@@ -72,8 +72,8 @@ namespace _3_4
 
         private static string Encrypt(string[] letters, string output, string[] ciphertext)
         {
-            Random random = new Random();
-            int r = random.Next(0, 26);
+           
+            
             var plaintext = Console.ReadLine()?.ToUpper();
 
             foreach (var letter in plaintext)
@@ -83,7 +83,7 @@ namespace _3_4
                 {
                     if (check == letters[i])
                     {
-                        output += ciphertext[r];
+                        output += ciphertext[i];
                     }
                 }
             }
