@@ -12,9 +12,7 @@ namespace _3_4
         {
             //3-4, 3,5
             Task3();
-
         }
-
         private static void Task3()
         {
             Console.WriteLine("Skriv Text Her (!-Store Bokstaver-!: ");
@@ -30,6 +28,7 @@ namespace _3_4
 
         private static string[] LettersAndCipher(out string[] ciphertext)
         {
+
             string[] letters =
             {
                 "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
