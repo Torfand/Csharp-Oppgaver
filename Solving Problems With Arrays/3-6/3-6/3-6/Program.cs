@@ -22,41 +22,25 @@ namespace _3_6
             Console.WriteLine("NEW INSTANCE :  ___ ");
             Random rnd = new Random();
    
-            string[] randomCipher = letters.OrderBy(x => rnd.Next()).ToArray();
+            var randomCipher = CreateRandomCipher(letters, rnd);
 
-            for (int i = 0; i < randomCipher.Length; i++)
-            {
-                if (randomCipher[i] == letters[i])
-                {
-                    Console.Write("Dupe Detected ---- ");
-                    Task6();
+            CheckForIdenticalPlacementsAndReRandomize(randomCipher, letters);
 
-                }
-            }
+            if (Decrypt(letters, randomCipher, out var output)) return;
 
-            var output = "";
-            var plaintext = Console.ReadLine().ToUpper();
-            foreach (var Letter in plaintext)
-            {
-                var check = Letter.ToString();
-                for (int i = 0; i < letters.Length; i++)
-                {
+            Console.WriteLine("Dekryptert Text : " + output);
+           
+        }
 
-                    if (check == letters[i])
-                    {
-                        output += randomCipher[i];
-                    }
-                }
-            }
-            Console.WriteLine("Kryptert Text :  " + output);
+        private static bool Decrypt(string[] letters, string[] randomCipher, out string output)
+        {
+            output = Encrypt(letters, randomCipher);
             var currentlyCiphered = output;
             Console.WriteLine("Dekrypter Text?? : Y/N");
             var answer = Console.ReadLine()?.ToUpper();
             if (answer != "Y")
             {
-
-                Console.WriteLine("Avslutter Programm : ");
-                return;
+                return true;
             }
 
             if (answer == "Y")
@@ -74,8 +58,45 @@ namespace _3_6
                 }
             }
 
-            Console.WriteLine("Dekryptert Text : " + output);
-           
+            return false;
+        }
+
+        private static string Encrypt(string[] letters, string[] randomCipher)
+        {
+            var output = "";
+            var plaintext = Console.ReadLine().ToUpper();
+            foreach (var Letter in plaintext)
+            {
+                var check = Letter.ToString();
+                for (int i = 0; i < letters.Length; i++)
+                {
+                    if (check == letters[i])
+                    {
+                        output += randomCipher[i];
+                    }
+                }
+            }
+
+            Console.WriteLine("Kryptert Text :  " + output);
+            return output;
+        }
+
+        private static void CheckForIdenticalPlacementsAndReRandomize(string[] randomCipher, string[] letters)
+        {
+            for (int i = 0; i < randomCipher.Length; i++)
+            {
+                if (randomCipher[i] == letters[i])
+                {
+                   
+                    Task6();
+                }
+            }
+        }
+
+        private static string[] CreateRandomCipher(string[] letters, Random rnd)
+        {
+            string[] randomCipher = letters.OrderBy(x => rnd.Next()).ToArray();
+            return randomCipher;
         }
     }
 }
