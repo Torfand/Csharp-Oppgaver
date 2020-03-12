@@ -65,7 +65,8 @@ namespace Oppgave_Ordgåte
             {
                 var parts = Line.Split('\t');
                 var Word = parts[1];
-                if (Word != LastWord && Word.Length > 7 && !Word.Contains("-")) List.Add(Word);
+                if (Word != LastWord && Word.Length > 7 
+                                     && !Word.Contains("-")) List.Add(Word);
 
 
                 LastWord = Word;
