@@ -8,7 +8,10 @@ namespace ObjectsIHTjs
         static void Main(string[] args)
         {
             // Obj iht JS - anonym
-            //var x =  new {Width =  50, Height = 30};
+            //var x =  new {Width =  50, Height = 30}; 
+
+
+            // C#
             var x = new Box
             {
                 Height = 50,
