@@ -26,13 +26,13 @@ namespace Referansetype_Vs_Verditype
             Console.WriteLine("FØR :   " + i);
             Console.WriteLine("FØR :   " + box.Height);
             DoSomthing(box, i);
-            Console.WriteLine("FØR :   " + box.Height);
+            Console.WriteLine("ETTER :   " + box.Height);
         }
 
-        private static void DoSomthing(Box box,  int i)
+        private static void DoSomthing(Box b,  int i)
         {
             i += 10;
-            box.Height += 10;
+            b.Height += 10;
 
 
         }
