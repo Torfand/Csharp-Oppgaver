@@ -6,7 +6,7 @@ namespace Tre_På_Rad
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BoardView.Show();
         }
     }
 }
