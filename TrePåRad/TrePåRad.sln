@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tre På Rad", "Tre På Rad\Tre På Rad.csproj", "{935F7BEC-4FF3-4D70-B0F8-DB98C4CAD59B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrePåRad Uten CONDITIONS", "Tre På Rad\TrePåRad Uten CONDITIONS.csproj", "{935F7BEC-4FF3-4D70-B0F8-DB98C4CAD59B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
