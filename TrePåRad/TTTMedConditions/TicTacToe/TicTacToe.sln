@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrePåRad", "Tre På Rad\TrePåRad.csproj", "{935F7BEC-4FF3-4D70-B0F8-DB98C4CAD59B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{279E18AF-945E-4F70-BD7E-FC0E37DF3413}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{935F7BEC-4FF3-4D70-B0F8-DB98C4CAD59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{935F7BEC-4FF3-4D70-B0F8-DB98C4CAD59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{935F7BEC-4FF3-4D70-B0F8-DB98C4CAD59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{935F7BEC-4FF3-4D70-B0F8-DB98C4CAD59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{279E18AF-945E-4F70-BD7E-FC0E37DF3413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{279E18AF-945E-4F70-BD7E-FC0E37DF3413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{279E18AF-945E-4F70-BD7E-FC0E37DF3413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{279E18AF-945E-4F70-BD7E-FC0E37DF3413}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A6054224-1F7A-4378-B29F-DF6EEE41AF03}
+		SolutionGuid = {E79A555E-B709-4723-825B-F349CA4858DC}
 	EndGlobalSection
 EndGlobal

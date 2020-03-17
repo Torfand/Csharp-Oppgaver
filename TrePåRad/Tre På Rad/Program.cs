@@ -14,11 +14,16 @@ namespace Tre_På_Rad
             {
                 BoardView.Show(boardModel);
                 Console.Write("Skriv Hvor du vil sette 'X', (Feks: a2)");
-                var pos = Console.ReadLine();
-            
-                boardModel.HasContent();
-                
-                boardModel.SetX(pos);
+                var validInput = true;
+                do
+                {
+                    if(!validInput) Console.WriteLine("Skriv igjen");
+                    var pos = Console.ReadLine();
+                    
+                    validInput = boardModel.SetX(pos);
+                    
+                } while (!validInput);
+
                 BoardView.Show(boardModel);
 
                 Thread.Sleep(1000);
@@ -26,6 +31,7 @@ namespace Tre_På_Rad
                 boardModel.SetO();
 
             }
+
 
 
         }

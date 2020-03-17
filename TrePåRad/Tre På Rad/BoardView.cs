@@ -12,6 +12,7 @@ namespace Tre_På_Rad
         public static void Show(BoardModel boardModel)
         {
             Console.Clear();
+            var checkWinner = boardModel.IsWinning();
             var content = boardModel.Content;
             Console.WriteLine("  a b c");
             Console.WriteLine(" ┌─────┐");
@@ -21,12 +22,19 @@ namespace Tre_På_Rad
             ShowOneLine(6, content);
 
             Console.WriteLine(" └─────┘");
+          
+            if (checkWinner != CellContent.None)
+            {
+                var winner = checkWinner == CellContent.Circle ? "Datamaskinen" : "Du";
+                Console.WriteLine("\n" + winner + " har vunnet!");
+                Environment.Exit(0);
+            };
         }
 
         private static void ShowOneLine(int startIndex, CellContent[] content)
         {
-            var lineNO = 1 + startIndex / 3;
-            Console.Write(lineNO + "│");
+            var lineNo = 1 + startIndex / 3;
+            Console.Write(lineNo + "│");
             for (int i = startIndex; i < startIndex + 3; i++)
             {
                 
