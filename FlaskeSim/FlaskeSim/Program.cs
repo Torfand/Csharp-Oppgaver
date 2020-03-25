@@ -9,7 +9,7 @@ namespace FlaskeSim
 
             var bottle1 = new Bottle(5);
             var bottle2 = new Bottle(3);
-            var wanted = 1;
+            var wanted = 2;
             var OperationsNO = 1;
             while (true)
             {
@@ -56,14 +56,14 @@ namespace FlaskeSim
             var opText = new string[]
             {
 
-                "Filling Bottle 1 from fount",
-                "Filling Bottle 2 from fount",
-                "Emptying Bottle 1 in Bottle 2",
-                "Emptying Bottle 2 in Bottle 1",
-                "Filling Flask 2 from Flask 1",
-                "Filling Flask 1 from Flask 2",
-                "Emptying Bottle 1 in endless Void",
-                "Emptying Bottle 2 in endless Void",
+                "Fill Bottle 1 from fount",
+                "Fill Bottle 2 from fount",
+                "Empty Bottle 1 in Bottle 2",
+                "Empty Bottle 2 in Bottle 1",
+                "Fill Flask 2 from Flask 1",
+                "Fill Flask 1 from Flask 2",
+                "Empty Bottle 1 in endless Void",
+                "Empty Bottle 2 in endless Void",
 
             };
             foreach (var operation in operations)

@@ -12,13 +12,9 @@ namespace Tre_På_Rad
         private readonly int _index3;
         private readonly CellContent[] _cells;
 
-        public Combo(CellContent[] cells, int index1, int index2, int index3)
-        {
-            _cells = cells;
-            _index3 = index3;
-            _index2 = index2;
-            _index1 = index1;
-        }
+        public Combo(CellContent[] cells, int index1, int index2, int index3) =>
+            (_cells, _index3, _index2, _index1) = (cells, index3, index2, index1);
+       
 
         public CellContent IsWinning()
         {

@@ -10,11 +10,9 @@ namespace FlaskeSim
         public int Capacity { get; }
         public int Content { get; private set; }
 
-        public Bottle(int capacity)
-        {
-            Capacity = capacity;
-
-        }
+        public Bottle(int capacity) => 
+            (Capacity) = (capacity);
+      
 
         public bool Fill(int volume)
         {
@@ -53,11 +51,8 @@ namespace FlaskeSim
 
         }
 
-        public void FillToCapFromVoid()
-        {
-            Content = Capacity;
+        public void FillToCapFromVoid() => (Content) = (Capacity);
 
-        }
     }
 
 
