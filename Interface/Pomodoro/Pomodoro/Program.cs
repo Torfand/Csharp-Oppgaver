@@ -7,7 +7,7 @@ namespace Pomodoro
     {
         static void Main(string[] args)
         {
-            var app =  new Program();
+          
             Console.ReadLine();
 
         }
