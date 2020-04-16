@@ -21,13 +21,6 @@ namespace RandomShapes
 
         }
 
-        public Rectangle(int height, int width, int x, int y)
-        {
-            X = x;
-            Y = y;
-            Height = height;
-            Width = width;
-        }
         public override string GetCharacter(int row, int col)
         {
             
