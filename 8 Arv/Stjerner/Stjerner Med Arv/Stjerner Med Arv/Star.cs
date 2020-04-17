@@ -6,7 +6,7 @@ namespace Stjerner_Med_Arv
 {
     class Star
     {
-        private string _chars = ".-x***x-.";
+        private string _chars = ".-x*x-.";
         protected int _x;
         protected int _y;
         private int _phase;
@@ -36,7 +36,7 @@ namespace Stjerner_Med_Arv
         public virtual void Update()
         {
             _phase++;
-            //if (_phase == _chars.Length) _phase = 0;
+            if (_phase == _chars.Length) _phase = 0;
 
         }
     }
