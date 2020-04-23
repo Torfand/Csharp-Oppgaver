@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Oppgave
 {
-    class Transport
+    internal class Transport
     {
         public string RegNum;
         public decimal TopSpeed;
