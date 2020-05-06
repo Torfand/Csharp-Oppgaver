@@ -9,7 +9,7 @@ namespace FlaskeSim
 
             var bottle1 = new Bottle(5);
             var bottle2 = new Bottle(3);
-            var wanted = 2;
+            var wanted = 5;
             var OperationsNO = 1;
             while (true)
             {
